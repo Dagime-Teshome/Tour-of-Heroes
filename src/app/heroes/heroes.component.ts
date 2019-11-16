@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Heroes} from "../heroes"
-import {FormsModule} from '@angular/forms';
+
 
 @Component({
   selector: 'app-heroes',
@@ -15,6 +15,10 @@ export class HeroesComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  change() {
+    this.hero.name = 'changed';
   }
 
 }
